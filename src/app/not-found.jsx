@@ -1,13 +1,12 @@
 import Link from 'next/link';
-import Header from '../components/shared/Header';
-import Footer from '@/components/shared/Footer';
 
 import { FaArrowRightLong } from 'react-icons/fa6';
 
 export default function NotFoundPage() {
     return (
-        <section className={`w-full h-screen flex justify-between flex-col`}>
-            <Header />
+        <section
+            className={`w-full min-h-[calc(100vh-333px)] md:min-h-[calc(100vh-289px)] lg:min-h-[calc(100vh-223px)] flex items-center justify-center`}
+        >
             <div className='w-full px-5 lg:px-10'>
                 <div className='w-full max-w-[1300px] mx-auto flex items-center flex-col'>
                     <h2 className='text-[50px] text-gray-300 lg:text-6xl'>
@@ -25,7 +24,6 @@ export default function NotFoundPage() {
                     </Link>
                 </div>
             </div>
-            <Footer />
         </section>
     );
 }
