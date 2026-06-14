@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Header from './components/shared/Header';
-import Footer from '@/app/components/shared/Footer';
+import Header from '../components/shared/Header';
+import Footer from '@/components/shared/Footer';
 
 import { FaArrowRightLong } from 'react-icons/fa6';
 
