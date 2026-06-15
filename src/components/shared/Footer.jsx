@@ -14,25 +14,16 @@ export default function Footer() {
                         </h1>
                     </div>
                     <div className='flex items-center justify-center flex-wrap gap-5 lg:gap-[30px] mt-5 lg:mt-[30px]'>
-                        <span className='text-base text-gray-950 lg:text-lg'>
+                        <span className='text-base text-gray-950'>
                             &copy; SportNest {new Date().getFullYear()}
                         </span>
-                        <Link
-                            href={'/'}
-                            className='text-base text-gray-950 lg:text-lg'
-                        >
+                        <Link href={'/'} className='text-base text-gray-950'>
                             Privacy policy
                         </Link>
-                        <Link
-                            href={'/'}
-                            className='text-base text-gray-950 lg:text-lg'
-                        >
+                        <Link href={'/'} className='text-base text-gray-950'>
                             Cookies policy
                         </Link>
-                        <Link
-                            href={'/'}
-                            className='text-base text-gray-950 lg:text-lg'
-                        >
+                        <Link href={'/'} className='text-base text-gray-950'>
                             Terms of use
                         </Link>
                     </div>
@@ -40,21 +31,21 @@ export default function Footer() {
                 <div className='w-fit flex items-center justify-center gap-3'>
                     <Link
                         href={'https://x.com/rrahmandev'}
-                        className='size-[30px] bg-transparent border border-gray-950 flex items-center justify-center rounded-lg transition-transform duration-200 ease-linear hover:-translate-y-1'
+                        className='size-[30px] bg-gray-950 flex items-center justify-center rounded-md'
                     >
-                        <FaXTwitter className='text-base text-gray-950' />
+                        <FaXTwitter className='text-base text-white' />
                     </Link>
                     <Link
                         href={'https://www.linkedin.com/in/rakibulrahman/'}
-                        className='size-[30px] bg-transparent border border-gray-950 flex items-center justify-center rounded-lg transition-transform duration-200 ease-linear hover:-translate-y-1'
+                        className='size-[30px] bg-gray-950 flex items-center justify-center rounded-md'
                     >
-                        <FaLinkedinIn className='text-base text-gray-950' />
+                        <FaLinkedinIn className='text-base text-white' />
                     </Link>
                     <Link
                         href={'/'}
-                        className='size-[30px] bg-transparent border border-gray-950 flex items-center justify-center rounded-lg transition-transform duration-200 ease-linear hover:-translate-y-1'
+                        className='size-[30px] bg-gray-950 flex items-center justify-center rounded-md'
                     >
-                        <FaInstagram className='text-base text-gray-950' />
+                        <FaInstagram className='text-base text-white' />
                     </Link>
                 </div>
             </div>

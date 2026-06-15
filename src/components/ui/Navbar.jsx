@@ -61,31 +61,48 @@ export default function Navbar() {
                                     <nav className='w-full mt-10 flex flex-col gap-5'>
                                         <Link
                                             href={'/'}
-                                            className={`text-base lg:text-lg transition-colors duration-200 ease-linear ${pathname === '/' ? 'text-green-500' : 'text-gray-500 hover:text-gray-950'}`}
+                                            className={`text-base transition-colors duration-200 ease-linear ${pathname === '/' ? 'text-green-500' : 'text-gray-500 hover:text-gray-950'}`}
                                         >
                                             Home
                                         </Link>
                                         <div className='w-full h-px bg-gray-200'></div>
                                         <Link
                                             href={'/all-facilities'}
-                                            className={`text-base lg:text-lg transition-colors duration-200 ease-linear ${pathname === '/all-facilities' ? 'text-green-500' : 'text-gray-500 hover:text-gray-950'}`}
+                                            className={`text-base transition-colors duration-200 ease-linear ${pathname === '/all-facilities' ? 'text-green-500' : 'text-gray-500 hover:text-gray-950'}`}
                                         >
                                             All facilities
                                         </Link>
                                     </nav>
                                     <div className='w-full flex items-center justify-center gap-5 mt-10'>
-                                        <Link
-                                            href={'/auth/register'}
-                                            className='flex items-center justify-center w-full bg-gray-950 cursor-pointer py-[15px] rounded-xl text-base text-white'
+                                        <button
+                                            type='button'
+                                            role='button'
+                                            aria-label='button'
+                                            onClick={handleToggleMenu}
+                                            className='w-full'
                                         >
-                                            Register
-                                        </Link>
-                                        <Link
-                                            href={'/auth/login'}
-                                            className='flex items-center justify-center w-full border border-gray-950 cursor-pointer py-[15px] rounded-xl text-base text-gray-950'
+                                            <Link
+                                                href={'/auth/register'}
+                                                className='flex items-center justify-center w-full bg-green-500 cursor-pointer py-[15px] rounded-xl text-base text-white transition-colors duration-200 ease-linear hover:bg-green-400'
+                                            >
+                                                Register
+                                            </Link>
+                                        </button>
+
+                                        <button
+                                            type='button'
+                                            role='button'
+                                            aria-label='button'
+                                            onClick={handleToggleMenu}
+                                            className='w-full'
                                         >
-                                            Login
-                                        </Link>
+                                            <Link
+                                                href={'/auth/login'}
+                                                className='flex items-center justify-center w-full border border-gray-950 cursor-pointer py-[15px] rounded-xl text-base text-gray-950'
+                                            >
+                                                Login
+                                            </Link>
+                                        </button>
                                     </div>
                                 </div>
                             </motion.div>
