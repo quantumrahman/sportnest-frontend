@@ -4,48 +4,57 @@ import { FaXTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa6';
 
 export default function Footer() {
     return (
-        <footer className='w-full px-5 lg:px-10'>
-            <div className='w-full max-w-[1300px] mx-auto border-t border-gray-200 py-10 flex flex-col items-center justify-center gap-[30px] lg:flex-row lg:justify-between lg:py-5'>
-                <div className='w-fit'>
-                    <div className='w-full text-center lg:w-fit'>
-                        <h1 className='text-2xl text-gray-950 font-semibold'>
+        <footer className='w-full bg-gray-950 px-5 md:px-10'>
+            <div className='w-full max-w-[1300px] mx-auto py-10 flex flex-col items-center justify-center gap-[30px] lg:flex-row lg:justify-between'>
+                <div className='space-y-5 md:space-y-[30px]'>
+                    <div className='w-full text-center lg:text-left'>
+                        <h1 className='text-2xl text-white font-semibold'>
                             Sport
                             <span className='text-green-500'>Nest</span>
                         </h1>
                     </div>
-                    <div className='flex items-center justify-center flex-wrap gap-5 lg:gap-[30px] mt-5 lg:mt-[30px]'>
-                        <span className='text-base text-gray-950'>
+                    <div className='flex items-center justify-center flex-wrap gap-5 md:gap-[30px]'>
+                        <span className='text-sm text-gray-500'>
                             &copy; SportNest {new Date().getFullYear()}
                         </span>
-                        <Link href={'/'} className='text-base text-gray-950'>
+                        <Link
+                            href={'/'}
+                            className='text-sm text-gray-500 transition-colors duration-200 ease-linear hover:text-green-500'
+                        >
                             Privacy policy
                         </Link>
-                        <Link href={'/'} className='text-base text-gray-950'>
+                        <Link
+                            href={'/'}
+                            className='text-sm text-gray-500 transition-colors duration-200 ease-linear hover:text-green-500'
+                        >
                             Cookies policy
                         </Link>
-                        <Link href={'/'} className='text-base text-gray-950'>
+                        <Link
+                            href={'/'}
+                            className='text-sm text-gray-500 transition-colors duration-200 ease-linear hover:text-green-500'
+                        >
                             Terms of use
                         </Link>
                     </div>
                 </div>
-                <div className='w-fit flex items-center justify-center gap-3'>
+                <div className='flex items-center justify-center gap-3'>
                     <Link
                         href={'https://x.com/rrahmandev'}
-                        className='size-[30px] bg-gray-950 flex items-center justify-center rounded-md'
+                        className='size-[32px] bg-gray-900 flex items-center justify-center rounded-md transition-colors duration-200 ease-linear hover:bg-green-500'
                     >
-                        <FaXTwitter className='text-base text-white' />
+                        <FaXTwitter className='text-sm text-white md:text-base' />
                     </Link>
                     <Link
                         href={'https://www.linkedin.com/in/rakibulrahman/'}
-                        className='size-[30px] bg-gray-950 flex items-center justify-center rounded-md'
+                        className='size-[32px] bg-gray-900 flex items-center justify-center rounded-md transition-colors duration-200 ease-linear hover:bg-green-500'
                     >
-                        <FaLinkedinIn className='text-base text-white' />
+                        <FaLinkedinIn className='text-sm text-white md:text-base' />
                     </Link>
                     <Link
                         href={'/'}
-                        className='size-[30px] bg-gray-950 flex items-center justify-center rounded-md'
+                        className='size-[32px] bg-gray-900 flex items-center justify-center rounded-md transition-colors duration-200 ease-linear hover:bg-green-500'
                     >
-                        <FaInstagram className='text-base text-white' />
+                        <FaInstagram className='text-sm text-white md:text-base' />
                     </Link>
                 </div>
             </div>
