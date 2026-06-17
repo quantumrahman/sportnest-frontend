@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-import { FaRegEdit } from 'react-icons/fa';
 import { FaCalendarDays, FaClock, FaDollarSign, FaUser } from 'react-icons/fa6';
 
 export default function BookingsCard() {

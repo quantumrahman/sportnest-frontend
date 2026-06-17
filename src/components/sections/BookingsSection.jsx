@@ -11,7 +11,7 @@ import BookingsCard from '../ui/BookingsCard';
 
 export default function BookingsSection() {
     return (
-        <section className='w-full'>
+        <div className='w-full'>
             <div className='w-full flex flex-col items-center justify-between gap-3 md:flex-row'>
                 <div className='w-full md:max-w-[120px]'>
                     <Select fullWidth placeholder='Filter'>
@@ -82,6 +82,6 @@ export default function BookingsSection() {
                     <FaAnglesRight />
                 </button>
             </div>
-        </section>
+        </div>
     );
 }
