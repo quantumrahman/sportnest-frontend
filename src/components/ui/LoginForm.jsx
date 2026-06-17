@@ -1,56 +1,48 @@
 export default function LoginForm() {
     return (
         <form>
-            <div className='w-full flex flex-col justify-center gap-[13px]'>
-                <label
-                    htmlFor='email'
-                    className='text-sm text-gray-950 lg:text-base'
-                >
+            <label htmlFor='email' className='w-full'>
+                <span className='block text-sm text-gray-950 md:text-base'>
                     Enter your email
-                </label>
-                <div className='w-full'>
-                    <input
-                        type='text'
-                        name='email'
-                        autoComplete='off'
-                        placeholder='Email address'
-                        className='w-full py-[15px] px-5 border border-gray-300 rounded-xl outline-none focus:border-green-500 caret-green-500 text-gray-950 placeholder:text-gray-400'
-                    />
-                    <div className='w-full h-[24px] mt-0.5 text-right'>
-                        {/* <span className='text-sm text-red-500'>Error</span> */}
-                    </div>
+                </span>
+                <input
+                    id='email'
+                    type='text'
+                    aria-label='input'
+                    name='email'
+                    placeholder='Email address'
+                    autoComplete='off'
+                    className='w-full outline-none bg-transparent border border-gray-200 rounded-md py-4 px-5 text-sm text-gray-950 caret-green-500 mt-3 focus:border-green-500 placeholder:text-gray-400'
+                />
+                <div className='w-full h-6'>
+                    <span className='text-sm text-red-500'></span>
                 </div>
-            </div>
-            <div className='w-full flex flex-col justify-center gap-[13px]'>
-                <label
-                    htmlFor='password'
-                    className='text-sm text-gray-950 lg:text-base'
-                >
+            </label>
+            <label htmlFor='password' className='w-full'>
+                <span className='block text-sm text-gray-950 md:text-base'>
                     Enter your password
-                </label>
-                <div className='w-full'>
-                    <input
-                        type='text'
-                        name='password'
-                        autoComplete='off'
-                        placeholder='Password'
-                        className='w-full py-[15px] px-5 border border-gray-300 rounded-xl outline-none focus:border-green-500 caret-green-500 text-gray-950 placeholder:text-gray-400'
-                    />
-                    <div className='w-full h-[24px] mt-0.5 text-right'>
-                        {/* <span className='text-sm text-red-500'>Error</span> */}
-                    </div>
+                </span>
+                <input
+                    id='password'
+                    type='text'
+                    aria-label='input'
+                    name='password'
+                    placeholder='Password'
+                    autoComplete='off'
+                    className='w-full outline-none bg-transparent border border-gray-200 rounded-md py-4 px-5 text-sm text-gray-950 caret-green-500 mt-3 focus:border-green-500 placeholder:text-gray-400'
+                />
+                <div className='w-full h-6'>
+                    <span className='text-sm text-red-500'></span>
                 </div>
-            </div>
-            <div className='w-full'>
-                <button
-                    type='submit'
-                    role='button'
-                    aria-label='button'
-                    className='w-full py-[15px] px-8 bg-green-500 rounded-xl text-base text-white cursor-pointer transition-colors duration-200 ease-linear hover:bg-green-400 mt-2'
-                >
-                    Login
-                </button>
-            </div>
+            </label>
+            <button
+                type='submit'
+                role='button'
+                aria-label='button'
+                className='w-full py-4 px-8 bg-green-500 rounded-md text-sm text-white cursor-pointer transition-colors duration-200 ease-linear hover:bg-green-400 mt-2 md:text-base'
+            >
+                Login
+            </button>
         </form>
     );
 }
