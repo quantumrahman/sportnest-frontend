@@ -134,7 +134,7 @@ export default function Navbar() {
                         >
                             <Link
                                 href={'/auth/register'}
-                                className={`text-sm text-gray-500 transition-colors duration-200 ease-linear hover:text-green-500 ${pathname === '/manage-facilities' ? 'text-green-500' : 'text-gray-500 hover:text-green-500'}`}
+                                className={`text-sm text-gray-500 transition-colors duration-200 ease-linear hover:text-green-500 ${pathname === '/auth/register' ? 'text-green-500' : 'text-gray-500 hover:text-green-500'}`}
                             >
                                 Sign up
                             </Link>
@@ -148,7 +148,7 @@ export default function Navbar() {
                         >
                             <Link
                                 href={'/auth/login'}
-                                className={`text-sm text-gray-500 transition-colors duration-200 ease-linear hover:text-green-500 ${pathname === '/manage-facilities' ? 'text-green-500' : 'text-gray-500 hover:text-green-500'}`}
+                                className={`text-sm text-gray-500 transition-colors duration-200 ease-linear hover:text-green-500 ${pathname === '/auth/login' ? 'text-green-500' : 'text-gray-500 hover:text-green-500'}`}
                             >
                                 Login
                             </Link>
