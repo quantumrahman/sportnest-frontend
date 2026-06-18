@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import FacilityCard from '../ui/FacilityCard';
 
 export default function FeaturedSection() {
@@ -15,14 +16,12 @@ export default function FeaturedSection() {
                             like you
                         </p>
                     </div>
-                    <button
-                        type='submit'
-                        role='button'
-                        aria-label='button'
+                    <Link
+                        href={'/facilities'}
                         className='w-full p-3 bg-green-500 text-sm text-white rounded-md transition-colors duration-200 ease-linear hover:bg-green-400 cursor-pointer sm:w-fit'
                     >
                         View All
-                    </button>
+                    </Link>
                 </div>
                 <div className='w-full grid grid-cols-1 gap-6 mt-15 md:grid-cols-2 lg:grid-cols-3'>
                     <FacilityCard />
