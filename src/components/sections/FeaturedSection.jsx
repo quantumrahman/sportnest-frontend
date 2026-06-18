@@ -2,7 +2,7 @@ import FacilityCard from '../ui/FacilityCard';
 
 export default function FeaturedSection() {
     return (
-        <div className='w-full py-10 md:py-20'>
+        <div className='w-full px-5 py-10 md:px-10 md:py-20'>
             <div className='w-full max-w-5xl mx-auto'>
                 <div className='w-full flex flex-col justify-between gap-y-8 sm:flex-row sm:items-center sm:gap-x-5'>
                     <div className='flex flex-col justify-start'>
