@@ -6,7 +6,7 @@ export default function DetailsSection() {
         <section className='w-full'>
             <div className='aspect-video bg-gray-100 relative overflow-hidden rounded-md'></div>
             <div className='w-full h-px bg-gray-200 my-8'></div>
-            <div className='w-full flex flex-col items-center justify-between gap-10 lg:gap-5 lg:flex-row'>
+            <div className='w-full flex flex-col justify-between gap-10 lg:gap-5 lg:flex-row'>
                 <div className='flex-2'>
                     <div className='w-full flex flex-col'>
                         <span className='text-sm md:text-base text-green-500'>
