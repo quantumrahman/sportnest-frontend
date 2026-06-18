@@ -1,6 +1,11 @@
 import DetailsSection from '@/components/sections/DetailsSection';
 import PageHeading from '@/components/ui/PageHeading';
 
+export const metadata = {
+    title: 'Facility Details - Check facillity and book now.',
+    description: 'Online sport booking facility portal.',
+};
+
 export default function FacilityDetailsPage() {
     return (
         <section className='w-full'>

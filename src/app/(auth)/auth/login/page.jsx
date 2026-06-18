@@ -2,6 +2,11 @@ import Link from 'next/link';
 import SocialButton from '@/components/ui/SocialButton';
 import LoginForm from '@/components/ui/LoginForm';
 
+export const metadata = {
+    title: 'Login - Welcome back to SportNest.',
+    description: 'Online sport booking facility portal.',
+};
+
 export default function LoginPage() {
     return (
         <section className='w-full min-h-screen flex items-center justify-center'>

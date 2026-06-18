@@ -1,6 +1,11 @@
 import FacilityForm from '@/components/ui/FacilityForm';
 import PageHeading from '@/components/ui/PageHeading';
 
+export const metadata = {
+    title: 'Create Facility - Add new facility.',
+    description: 'Online sport booking facility portal.',
+};
+
 export default function CreateFacilityPage() {
     return (
         <section className='w-full'>

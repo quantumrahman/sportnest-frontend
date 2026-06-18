@@ -1,6 +1,11 @@
 import BookingsSection from '@/components/sections/BookingsSection';
 import PageHeading from '@/components/ui/PageHeading';
 
+export const metadata = {
+    title: 'Bookings - All bookings sports.',
+    description: 'Online sport booking facility portal.',
+};
+
 export default function BookingPage() {
     return (
         <section className='w-full'>

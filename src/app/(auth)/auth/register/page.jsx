@@ -2,6 +2,11 @@ import Link from 'next/link';
 import SocialButton from '@/components/ui/SocialButton';
 import RegisterForm from '@/components/ui/RegisterForm';
 
+export const metadata = {
+    title: 'Register - Create account on SportNest.',
+    description: 'Online sport booking facility portal.',
+};
+
 export default function RegisterPage() {
     return (
         <section className='w-full min-h-screen flex items-center justify-center'>
