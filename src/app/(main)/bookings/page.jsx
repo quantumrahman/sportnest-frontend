@@ -1,7 +1,7 @@
 import BookingsSection from '@/components/sections/BookingsSection';
 import PageHeading from '@/components/ui/PageHeading';
 
-export default function MyBookingPage() {
+export default function BookingPage() {
     return (
         <section className='w-full'>
             <PageHeading title={'Bookings Facilities'} />

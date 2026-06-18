@@ -1,7 +1,7 @@
 import FacilitiesSection from '@/components/sections/FacilitiesSection';
 import PageHeading from '@/components/ui/PageHeading';
 
-export default function AllFacilitiesPage() {
+export default function FacilitiesPage() {
     return (
         <section className='w-full'>
             <PageHeading title={'Browse Facilities'} />
